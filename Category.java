@@ -60,7 +60,7 @@ public class Category {
         System.out.println("Nhap the loai: ");
             int index = 0;
             String checkString = scanner.nextLine();
-            while (!checkString.equals(arrListOfCategory.get(index).getCategory()) && index < arrListOfCategory.size()) {
+            while (!checkString.equalsIgnoreCase(arrListOfCategory.get(index).getCategory()) && index < arrListOfCategory.size()) {
                 index++;
                 if (index == arrListOfCategory.size()) {
                     System.out.println("Nhap sai, nhap lai: ");
